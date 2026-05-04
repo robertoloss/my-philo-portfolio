@@ -24,12 +24,21 @@ export default async function Home() {
 	const cvEntries: Cv_entry[] = await getCvEntry()
 	return (
 		<div className="flex flex-col w-full gap-y-4 h-screen justify-center items-center text-center text-3xl font-extralight">
-			<h1 className="font-semibold text-5xl hidden sm:block">Roberto Loss - Philosophy</h1>
+			<h1 className="font-semibold text-5xl hidden sm:block">
+        Roberto Loss 
+      </h1>
 			<div className="flex flex-col sm:hidden font-semibold text-4xl">
 				<h1>Roberto Loss</h1>
-				<h1>Philosophy</h1>
 			</div>
 			<h1 className="mt-6 text-2xl">🚧 Site under construction 🚧</h1>
+			<h1 className="text-lg text-gray-300 mt-6">You can find my developer website at &nbsp; 
+				<Link 
+					href="https://robertoloss.netlify.app"
+					className="text-blue-400 hover:text-blue-200 transition-all"
+				>
+					 robertoloss.netlify.app
+				</Link>
+			</h1>
 			<h1 className="mt-6 text-lg">
 				For a list of my philosophy papers go to &nbsp;
 				<Link 
@@ -38,14 +47,6 @@ export default async function Home() {
 				>
 					https://philpeople.org/profiles/roberto-loss
 				</Link>
-			</h1>
-			<h1 className="text-base text-gray-300 mt-20">(you can find my developer website at &nbsp; 
-				<Link 
-					href="https://robertoloss.netlify.app"
-					className="text-blue-400 hover:text-blue-200 transition-all"
-				>
-					 robertoloss.netlify.app
-				</Link>)
 			</h1>
 		</div>
 	)
